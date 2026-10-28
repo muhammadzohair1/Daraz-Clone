@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stores — Shop the Future | Curated Everyday Essentials</title>
+    <meta name="description" content="Stores is a curated product discovery storefront. Browse thoughtfully selected everyday essentials — fitness, apparel, skincare and health — and shop them on Daraz.">
+    <meta name="theme-color" content="#101110">
+
+    <!-- Open Graph / Twitter (add og:url / canonical only when the production domain is known) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Stores — Shop the Future">
+    <meta property="og:description" content="Thoughtfully selected essentials. Unexpected discoveries. Shop on Daraz.">
+    <meta property="og:image" content="Assets/Img/1.avif">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Stores — Shop the Future">
+    <meta name="twitter:description" content="Thoughtfully selected essentials. Unexpected discoveries.">
+    <meta name="twitter:image" content="Assets/Img/1.avif">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/Css/Style.css">
+    <link rel="stylesheet" href="Assets/Css/Components.css">
+    <link rel="stylesheet" href="Assets/Css/Responsive.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a class="nav-logo" href="#top" aria-label="Stores — home">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M12 2L2 12l10 10 10-10L12 2z" fill="currentColor" />
+                    <path d="M12 7l5 5-5 5-5-5 5-5z" fill="var(--ink)" />
+                </svg>
+                <span>STORES<sup>®</sup></span>
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+                <a href="#top" data-navlink>Home</a>
+                <a href="#showcase" data-navlink>Discover</a>
+                <a href="#products" data-navlink>Products</a>
+                <a href="#collections" data-navlink>Collections</a>
+                <a href="#about" data-navlink>About</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="search-btn" class="nav-icon-btn" data-open-search aria-label="Search products (Ctrl+K)">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+                        <path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                    <span class="nav-icon-tip">Ctrl&nbsp;K</span>
+                </button>
+                <button id="wishlist-btn" class="nav-icon-btn" aria-label="Open wishlist">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M8 13.5S2 10 2 5.8A3 3 0 0 1 8 4a3 3 0 0 1 6 1.8C14 10 8 13.5 8 13.5z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="none" />
+                    </svg>
+                    <span class="nav-icon-count" data-wishlist-count aria-hidden="true">0</span>
+                </button>
+                <button id="nav-btn" class="menu-btn" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="takeover-nav">
+                    <svg viewBox="20 30 60 40" aria-hidden="true" focusable="false">
+                        <path id="top-line-1" d="M30,37 L70,37 Z"></path>
+                        <path id="middle-line-1" d="M30,50 L70,50 Z"></path>
+                        <path id="bottom-line-1" d="M30,63 L70,63 Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= TAKEOVER MENU ================= -->
+    <div id="takeover-nav" class="takeover" role="dialog" aria-modal="true" aria-label="Site menu" aria-hidden="true">
+        <div class="takeover-inner">
+            <nav class="takeover-menu" aria-label="Menu">
+                <ul class="takeover-items">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#showcase">Discover</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="takeover-contact">
+                <h2 class="takeover-title">Shop something<br>better<span class="accent">.</span></h2>
+                <ul class="takeover-contact-list">
+                    <!-- CONFIG: replace with your real contact email -->
+                    <li><a href="mailto:hello@stores.com">hello@stores.com <span class="placeholder-tag">(placeholder)</span></a></li>
+                    <li><a href="https://www.daraz.pk" target="_blank" rel="noopener noreferrer">Shop on Daraz</a></li>
+                </ul>
+                <div class="takeover-social" id="takeover-social" hidden>
+                    <!-- CONFIG: add verified social links, e.g. <a href="https://instagram.com/...">instagram</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+
+        <!-- ================= HERO ================= -->
+        <section class="hero" id="top">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-orb hero-orb-3"></div>
+                <div class="hero-grid"></div>
+            </div>
+            <figure class="hero-visual reveal" aria-hidden="true">
+                <img src="Assets/Img/post (1).jpg" alt="" width="800" height="1000" loading="eager" fetchpriority="high">
+            </figure>
+            <div class="hero-content">
+                <p class="hero-eyebrow reveal">Featured collection — 01</p>
+                <h1 class="hero-title">
+                    <span class="line"><span>Shop the</span></span>
+                    <span class="line"><span class="gradient-text">future.</span></span>
+                </h1>
+                <p class="hero-sub reveal">Thoughtfully selected essentials. Unexpected discoveries.</p>
+                <div class="hero-cta reveal">
+                    <a href="#products" class="btn btn-primary">Explore products
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#collections" class="btn btn-ghost">Discover collections</a>
+                </div>
+            </div>
+            <div class="hero-scroll" aria-hidden="true">
+                <span></span>
+            </div>
+        </section>
+
+        <!-- ================= MARQUEE ================= -->
+        <div class="marquee" role="presentation" aria-hidden="true">
+            <div class="marquee-track">
+                <span>Thoughtfully selected</span><i>•</i><span>Everyday essentials</span><i>•</i><span>Design meets
+                    function</span><i>•</i><span>Discover something new</span><i>•</i>
+                <span>Thoughtfully selected</span><i>•</i><span>Everyday essentials</span><i>•</i><span>Design meets
+                    function</span><i>•</i><span>Discover something new</span><i>•</i>
+            </div>
+        </div>
+
+        <!-- ================= SHOWCASE / GALLERY ================= -->
+        <section class="showcase section" id="showcase">
+            <div class="container-narrow">
+                <p class="section-eyebrow reveal">Showcase</p>
+                <h2 class="section-title reveal">Designed for everyday life.</h2>
+                <p class="section-sub reveal">Discover the details that make ordinary things feel extraordinary.</p>
+            </div>
+            <div class="gallery" id="gallery">
+                <figure class="gallery-item reveal g-a">
+                    <button class="gallery-thumb" data-lightbox="0">
+                        <img src="Assets/Img/post (1).jpg" alt="Product lifestyle photo from the curated collection" width="800" height="1000" loading="eager">
+                        <figcaption>Everyday carry</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-b">
+                    <button class="gallery-thumb" data-lightbox="1">
+                        <img src="Assets/Img/post (2).jpg" alt="Minimal product composition" width="800" height="800" loading="lazy">
+                        <figcaption>Workspace details</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-c">
+                    <button class="gallery-thumb" data-lightbox="2">
+                        <img src="Assets/Img/post (3).jpg" alt="Soft-light product still life" width="800" height="1000" loading="lazy">
+                        <figcaption>Still life</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-d">
+                    <button class="gallery-thumb" data-lightbox="3">
+                        <img src="Assets/Img/post (5).jpg" alt="Lifestyle photo from the curated collection" width="800" height="1000" loading="lazy">
+                        <figcaption>The collection</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-e">
+                    <button class="gallery-thumb" data-lightbox="4">
+                        <img src="Assets/Img/post (6).jpg" alt="Close-up detail of a featured product" width="800" height="800" loading="lazy">
+                        <figcaption>Details</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-f">
+                    <button class="gallery-thumb" data-lightbox="5">
+                        <img src="Assets/Img/post (8).jpg" alt="Studio product photograph" width="800" height="800" loading="lazy">
+                        <figcaption>Studio</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-g">
+                    <button class="gallery-thumb" data-lightbox="6">
+                        <img src="Assets/Img/post (9).jpg" alt="Product photographed in natural light" width="800" height="1000" loading="lazy">
+                        <figcaption>Natural light</figcaption>
+                    </button>
+                </figure>
+                <figure class="gallery-item reveal g-h">
+                    <button class="gallery-thumb" data-lightbox="7">
+                        <img src="Assets/Img/post (10).jpg" alt="Editorial lifestyle composition" width="800" height="800" loading="lazy">
+                        <figcaption>Editorial</figcaption>
+                    </button>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ================= PRODUCTS ================= -->
+        <section class="products section" id="products">
+            <div class="container-narrow">
+                <p class="section-eyebrow reveal">Products</p>
+                <h2 class="section-title reveal">Find your next favorite.</h2>
+                <p class="section-sub reveal">Thoughtfully selected products for everyday upgrades.</p>
+            </div>
+
+            <div class="product-toolbar container-wide reveal">
+                <div class="toolbar-row">
+                    <button id="filter-toggle" class="chip chip-filter" aria-expanded="false" aria-controls="filter-drawer">
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M2 4h12M4 8h8M6.5 12h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                        </svg>
+                        Filters
+                    </button>
+                    <div class="filters" role="group" aria-label="Filter products by category" id="filters"></div>
+                    <div class="toolbar-end">
+                        <div class="search-wrap">
+                            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+                                <path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                            </svg>
+                            <label class="sr-only" for="search">Search products</label>
+                            <input id="search" type="search" placeholder="Search products…" autocomplete="off">
+                            <button id="search-clear" class="search-clear" aria-label="Clear search" hidden>×</button>
+                        </div>
+                        <label class="sr-only" for="sort">Sort products</label>
+                        <select id="sort">
+                            <option value="featured">Featured</option>
+                            <option value="az">Name: A–Z</option>
+                            <option value="price-asc">Price: low to high</option>
+                            <option value="price-desc">Price: high to low</option>
+                        </select>
+                        <div class="view-toggle" role="group" aria-label="Layout view">
+                            <button id="view-grid" class="view-btn is-active" aria-pressed="true" aria-label="Grid view">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <rect x="2" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                    <rect x="9" y="2" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                    <rect x="2" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                    <rect x="9" y="9" width="5" height="5" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                </svg>
+                            </button>
+                            <button id="view-list" class="view-btn" aria-pressed="false" aria-label="List view">
+                                <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                    <rect x="2" y="2" width="12" height="3" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                    <rect x="2" y="7" width="12" height="3" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                    <rect x="2" y="12" width="12" height="2" rx="1" stroke="currentColor" stroke-width="1.4" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile filter drawer -->
+                <div id="filter-drawer" class="filter-drawer" role="dialog" aria-modal="true"
+                    aria-label="Product filters" hidden>
+                    <div class="filter-drawer-head">
+                        <h3>Filters</h3>
+                        <button class="filter-drawer-close" data-close-drawer aria-label="Close filters">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                                <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="filter-drawer-body" id="filter-drawer-body"></div>
+                </div>
+            </div>
+
+            <div class="toolbar-meta container-wide">
+                <p class="product-count" id="product-count" role="status" aria-live="polite"></p>
+                <button id="clear-filters" class="chip chip-clear" hidden>Clear all filters</button>
+            </div>
+
+            <div class="cards-container" id="cards" aria-live="polite"></div>
+
+            <div class="empty-state container-wide" id="empty-state" hidden>
+                <p class="empty-title">No products match your filters.</p>
+                <p class="empty-sub">Try a different search, or clear everything and start over.</p>
+                <button class="btn btn-ghost" id="clear-filters-empty">Clear all filters</button>
+            </div>
+        </section>
+
+        <!-- ================= COLLECTIONS ================= -->
+        <section class="collections section" id="collections">
+            <div class="container-narrow">
+                <p class="section-eyebrow reveal">Collections</p>
+                <h2 class="section-title reveal">Curated by point of view.</h2>
+                <p class="section-sub reveal">Short, edited groups of products — browse them below.</p>
+            </div>
+            <div class="collection-grid container-wide" id="collection-grid"></div>
+        </section>
+
+        <!-- ================= ABOUT ================= -->
+        <section class="about section" id="about">
+            <div class="container-narrow about-inner">
+                <div class="about-copy">
+                    <p class="section-eyebrow reveal">About</p>
+                    <h2 class="section-title reveal">Good finds. Thoughtful choices.</h2>
+                    <p class="section-sub reveal">Good design isn't just how something looks. It's how naturally it fits
+                        into your life.</p>
+                    <ul class="about-values reveal">
+                        <li>
+                            <strong>Thoughtful selection</strong>
+                            <span>Every product is chosen with intent, not volume.</span>
+                        </li>
+                        <li>
+                            <strong>Clear product information</strong>
+                            <span>What you see is what the product actually is. When a price isn't verified, we say so.</span>
+                        </li>
+                        <li>
+                            <strong>Simple shopping journey</strong>
+                            <span>Discover here, buy on Daraz. Purchases happen on Daraz — Stores doesn't process
+                                payments.</span>
+                        </li>
+                        <li>
+                            <strong>Prices may change</strong>
+                            <span>Prices and availability are checked when noted, but can change on Daraz at any time.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-visual reveal">
+                    <img src="Assets/Img/1.avif" alt="Curated selection of featured products" width="800" height="600"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CTA / CONTACT ================= -->
+        <section class="cta section" id="contact">
+            <div class="container-narrow cta-card reveal">
+                <h2 class="cta-title">Something on your mind?</h2>
+                <p class="cta-sub">We'd love to hear from you.</p>
+                <div class="cta-actions">
+                    <!-- CONFIG: replace with your real contact email -->
+                    <a href="mailto:hello@stores.com" class="btn btn-light">Get in touch</a>
+                    <a href="https://www.daraz.pk" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Shop
+                        on Daraz</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container-narrow footer-inner">
+            <div class="footer-brand">
+                <a class="nav-logo" href="#top" aria-label="Stores — back to top">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M12 2L2 12l10 10 10-10L12 2z" fill="currentColor" />
+                    </svg>
+                    <span>STORES<sup>®</sup></span>
+                </a>
+                <p>Shop the future. Thoughtfully selected essentials, unexpected discoveries.</p>
+            </div>
+            <nav class="footer-links" aria-label="Footer — sections">
+                <a href="#top">Home</a>
+                <a href="#showcase">Discover</a>
+                <a href="#products">Products</a>
+                <a href="#collections">Collections</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <nav class="footer-links" aria-label="Footer — categories">
+                <a href="#products" data-cat="Fitness">Fitness</a>
+                <a href="#products" data-cat="Apparel">Apparel</a>
+                <a href="#products" data-cat="Skincare">Skincare</a>
+                <a href="#products" data-cat="Health">Health</a>
+                <a href="https://www.daraz.pk" target="_blank" rel="noopener noreferrer">Daraz ↗</a>
+            </nav>
+        </div>
+        <div class="container-narrow footer-disclosure">
+            <p>Product purchases are completed on Daraz. Prices and availability may change. This site is device-local
+                only — wishlists and comparisons are stored in your browser, not an account.</p>
+        </div>
+        <div class="footer-bar">
+            <span>© <span id="year">2026</span> Stores. All rights reserved.</span>
+            <button class="to-top" id="to-top" aria-label="Back to top">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M8 13V3M4 7l4-4 4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </footer>
+
+    <!-- ================= SEARCH OVERLAY ================= -->
+    <div id="search-overlay" class="search-overlay" role="dialog" aria-modal="true" aria-label="Search products" hidden>
+        <div class="search-overlay-backdrop" data-close-search></div>
+        <div class="search-overlay-panel" role="document">
+            <div class="search-overlay-head">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+                    <path d="M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                </svg>
+                <label class="sr-only" for="search-overlay-input">Search products</label>
+                <input id="search-overlay-input" type="text" placeholder="Search products, categories, tags…"
+                    autocomplete="off" aria-autocomplete="list" aria-controls="search-overlay-results">
+                <button id="search-overlay-clear" class="search-clear" aria-label="Clear search" hidden>×</button>
+                <button class="search-overlay-esc" data-close-search>Esc</button>
+            </div>
+            <p id="search-overlay-hint" class="search-hint">Search by name, description, category, brand or tags.</p>
+            <div id="search-overlay-results" class="search-results" role="listbox" aria-label="Search results"></div>
+            <div id="search-overlay-empty" class="search-empty" hidden>
+                <p id="search-overlay-empty-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= WISHLIST PANEL ================= -->
+    <div id="wishlist-panel" class="panel" role="dialog" aria-modal="true" aria-label="Wishlist" hidden>
+        <div class="panel-backdrop" data-close-panel></div>
+        <aside class="panel-side">
+            <div class="panel-head">
+                <h2>Wishlist</h2>
+                <button class="panel-close" data-close-panel aria-label="Close wishlist">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            <p class="panel-note">Saved on this device only — not an account.</p>
+            <div class="panel-list" id="wishlist-list"></div>
+            <div class="panel-empty" id="wishlist-empty" hidden>
+                <p>Nothing saved yet.</p>
+                <p class="panel-empty-sub">Tap the heart on any product to save it here.</p>
+            </div>
+            <div class="panel-clear" id="wishlist-clear" hidden>
+                <button class="btn btn-ghost" data-clear-wishlist>Clear wishlist</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- ================= COMPARE BAR ================= -->
+    <div id="compare-bar" class="compare-bar" role="region" aria-label="Product comparison" hidden>
+        <div class="compare-bar-list" id="compare-bar-list"></div>
+        <div class="compare-bar-actions">
+            <button class="btn btn-primary btn-sm" data-open-compare>Compare</button>
+            <button class="chip chip-clear" data-compare-clear>Clear</button>
+        </div>
+    </div>
+
+    <!-- ================= COMPARE MODAL ================= -->
+    <div id="compare-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="compare-title" hidden>
+        <div class="modal-backdrop" data-close-compare></div>
+        <div class="modal-panel compare-panel" role="document">
+            <button class="modal-close" data-close-compare aria-label="Close comparison">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="compare-body">
+                <h3 id="compare-title">Compare products</h3>
+                <div class="compare-table-wrap" id="compare-table-wrap"></div>
+                <p class="compare-empty-note" id="compare-empty" hidden>Select at least two products to compare.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= QUICK VIEW MODAL ================= -->
+    <div class="modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="qm-title" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-panel" role="document">
+            <button class="modal-close" data-close-modal aria-label="Close product details">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                </svg>
+            </button>
+            <div class="modal-media" data-media>
+                <img id="qm-img" alt="" data-fallback>
+                <button id="qm-zoom" class="qm-zoom" aria-label="Toggle image zoom">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.6" />
+                        <path d="M10 7H7M7 7V4M11 11l3.2 3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="qm-thumbs" id="qm-thumbs" hidden></div>
+            </div>
+            <div class="modal-body">
+                <span class="card-tag" id="qm-cat"></span>
+                <h3 id="qm-title"></h3>
+                <p class="qm-brand" id="qm-brand" hidden></p>
+                <p id="qm-desc"></p>
+                <div class="qm-price-row">
+                    <p class="qm-price" id="qm-price" hidden></p>
+                    <p class="qm-price-was" id="qm-price-was" hidden></p>
+                </div>
+                <p class="qm-verified" id="qm-verified" hidden></p>
+                <dl class="qm-info" id="qm-info" hidden></dl>
+                <ul class="qm-features" id="qm-features" hidden></ul>
+                <div class="modal-actions">
+                    <a id="qm-link" class="btn btn-primary" target="_blank" rel="noopener noreferrer" href="#">Shop on
+                        Daraz
+                        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <button id="qm-wishlist" class="btn btn-ghost" data-wishlist>♡ Save</button>
+                </div>
+                <div class="qm-related-wrap" id="qm-related-wrap" hidden>
+                    <h4>Related products</h4>
+                    <div class="qm-related" id="qm-related"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= LIGHTBOX ================= -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <div class="lightbox-backdrop" data-close-lb></div>
+        <figure class="lightbox-panel">
+            <img id="lb-img" alt="" data-fallback>
+            <div class="lb-loader" id="lb-loader" hidden><span></span></div>
+            <figcaption id="lb-cap"></figcaption>
+            <p class="lb-count" id="lb-count" aria-hidden="true"></p>
+        </figure>
+        <button class="lb-btn lb-close" data-close-lb aria-label="Close image viewer">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+        </button>
+        <button class="lb-btn lb-prev" id="lb-prev" aria-label="Previous image">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M10 3L5 8l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+        <button class="lb-btn lb-next" id="lb-next" aria-label="Next image">
+            <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- ================= CONFIRM DIALOG ================= -->
+    <div id="confirm-dialog" class="modal" role="alertdialog" aria-modal="true" aria-labelledby="confirm-title"
+        aria-describedby="confirm-text" hidden>
+        <div class="modal-backdrop" data-close-confirm></div>
+        <div class="modal-panel confirm-panel" role="document">
+            <h3 id="confirm-title"></h3>
+            <p id="confirm-text"></p>
+            <div class="confirm-actions">
+                <button class="btn btn-ghost" data-close-confirm>Cancel</button>
+                <button class="btn btn-primary" id="confirm-yes">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="Assets/Js/Script.js"></script>
+</body>
+
+</html>
